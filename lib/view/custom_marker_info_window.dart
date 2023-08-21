@@ -169,11 +169,14 @@ class _CustomMarkerInfoWindowState extends State<CustomMarkerInfoWindow> {
               _customInfoWindowController.googleMapController = controller;
             },
           ),
-          CustomInfoWindow(
-            controller: _customInfoWindowController,
-            height: 200,
-            width: 300,
-            offset: 35,
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: CustomInfoWindow(
+              controller: _customInfoWindowController,
+              height: 200,
+              width: 300,
+              offset: 35,
+            ),
           ),
         ],
       ),

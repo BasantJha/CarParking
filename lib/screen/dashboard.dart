@@ -1,12 +1,17 @@
+import 'package:carparking/screen/about.dart';
 import 'package:carparking/screen/find_lot.dart';
 import 'package:carparking/screen/login_screen.dart';
 import 'package:carparking/screen/profile_page.dart';
+import 'package:carparking/screen/setting.dart';
 import 'package:carparking/view/home_screen.dart';
+import 'package:carparking/view/user_current_location.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rating_dialog/rating_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../view/google_places_api.dart';
 
 class DashboardPage extends StatelessWidget {
   DashboardPage({Key? key}) : super(key: key);
@@ -100,15 +105,15 @@ class DashboardPage extends StatelessWidget {
                     }
                     if (data.title.toString() == "Find Lot") {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => MapScreen()));
+                          MaterialPageRoute(builder: (_) => GetUserCurrentLocation()));
                     }
                     if (data.title.toString() == "Setting") {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => FindLot()));
+                          MaterialPageRoute(builder: (_) => Setting()));
                     }
                     if (data.title.toString() == "About") {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => FindLot()));
+                          MaterialPageRoute(builder: (_) => About()));
                     }
                     if (data.title.toString() == "Feedback") {
                       showDialog(

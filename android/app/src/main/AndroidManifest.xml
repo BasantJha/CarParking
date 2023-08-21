@@ -1,12 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-    <meta-data android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyDZF_oNL8olqMqAbgcjl6HU1vj2eEjx1Hw"/>
+
     <application
         android:label="carparking"
         android:name="${applicationName}"
@@ -37,5 +35,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDymdWgD7dcsNKK7KROv-IMZRe4-T7d58I"/>
     </application>
 </manifest>

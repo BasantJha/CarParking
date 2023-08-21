@@ -50,6 +50,7 @@ dependencies:
   uuid: ^3.0.7
 
 
+
   # state management
   bloc: ^7.2.1
   flutter_bloc: ^7.3.1

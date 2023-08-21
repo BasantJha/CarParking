@@ -6,7 +6,7 @@ import 'package:carparking/screen/my_header_drawer.dart';
 import 'package:carparking/screen/payment_details.dart';
 import 'package:carparking/screen/profile_page.dart';
 import 'package:carparking/screen/reserved_lot.dart';
-import 'package:carparking/view/home_screen.dart';
+import 'package:carparking/view/user_current_location.dart';
 import 'package:flutter/material.dart';
 import 'package:rating_dialog/rating_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     } else if (currentPage == DrawerSections.contacts) {
       container =  ProfilePage();
     } else if (currentPage == DrawerSections.events) {
-      container =  MapScreen();
+      container =  GetUserCurrentLocation();
     } else if (currentPage == DrawerSections.notes) {
       container = const ReservedLotDetails();
     } else if (currentPage == DrawerSections.settings) {
