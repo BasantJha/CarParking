@@ -10,6 +10,8 @@ import 'package:carparking/view/user_current_location.dart';
 import 'package:flutter/material.dart';
 import 'package:rating_dialog/rating_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../view/google_places_api.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -26,7 +28,7 @@ class _HomePageState extends State<HomePage> {
     } else if (currentPage == DrawerSections.contacts) {
       container =  ProfilePage();
     } else if (currentPage == DrawerSections.events) {
-      container =  GetUserCurrentLocation();
+      container =  GooglePlacesApiScreen();
     } else if (currentPage == DrawerSections.notes) {
       container = const ReservedLotDetails();
     } else if (currentPage == DrawerSections.settings) {

@@ -105,7 +105,7 @@ class DashboardPage extends StatelessWidget {
                     }
                     if (data.title.toString() == "Find Lot") {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => GetUserCurrentLocation()));
+                          MaterialPageRoute(builder: (_) => GooglePlacesApiScreen()));
                     }
                     if (data.title.toString() == "Setting") {
                       Navigator.push(context,
